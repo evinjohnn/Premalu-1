@@ -2,7 +2,7 @@
   "name": "premalu",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://i0dheerajdileep.github.io/Premalu",
+  "homepage": "",
   "type": "module",
   "scripts": {
     "dev": "vite",

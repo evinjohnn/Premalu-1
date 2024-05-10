@@ -44,7 +44,7 @@ function Landing() {
     <React.Fragment>
        {!isOpen ? ( <div className="flex justify-center items-center h-screen ">
             <div className="text-center flex items-center flex-col">
-                <h1 className="text-4xl font-bold text-red-500 drop-shadow-md font-serif italic heading">Will you be my valentine , {data?.name} ? </h1>
+                <h1 className="text-4xl font-bold text-red-500 drop-shadow-md font-serif italic heading">Wanna go out with me , {data?.name} ? </h1>
                 <div className='pt-16'>
                     <div className="heart1 drop-shadow-md"></div>
                 </div>
@@ -67,16 +67,16 @@ function Landing() {
                         </button>
                     )}
                 </div>
-                {/* <a href="https://www.buymeacoffee.com/dheerajdileep" className='!bottom-5 absolute'><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=dheerajdileep&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" /></a> */}
+                {/* <a href="https://www.buymeacoffee.com/" className='!bottom-5 absolute'><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=dheerajdileep&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" /></a> */}
             </div>
         </div> ) : (
                 <div className="flex justify-center items-center flex-col  h-screen">
                          <div className="container">
                             <div className="valentines ">
                                 <div className="envelope">
-                                    <div className="card text-center customFont" data-content={`Lets go to ${data.location} at ${data.time} ❤️`}>
+                                    <div className="card text-top customFont" data-content={`Lets go to ${data.location} at ${data.time} ❤️`}>
                                         <div className="text">
-                                            Happy  Valentines's Day
+                                            
                                         </div>
                                         <div className="heart"></div>
                                     </div>
@@ -85,7 +85,7 @@ function Landing() {
                             </div>
                         </div>
                         <button className='absolute bottom-24' onClick={()=>{navigate('/')}}>Create your own</button>
-                        {/* <a href="https://www.buymeacoffee.com/dheerajdileep" className='!bottom-5  absolute'><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=dheerajdileep&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" /></a> */}
+                        {/* <a href="https://www.buymeacoffee.com/" className='!bottom-5  absolute'><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=dheerajdileep&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" /></a> */}
                     </div>
             )
         }
